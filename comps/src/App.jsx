@@ -1,26 +1,26 @@
-import Button from './Button';
+import Accordion from "./components/Accordion"
 
 function App() {
 
-	return (
-		<div>
-			<div>
-				<Button primary rounded>Click me!!</Button>
-			</div>
-			<div>
-				<Button secondary outline>Buy Now!</Button>
-			</div>
-			<div>
-				<Button success outline>See Deal!</Button>
-			</div>
-			<div>
-				<Button warning outline>Hide Ads!</Button>
-			</div>
-			<div>
-				<Button danger rounded outline>Something!</Button>
-			</div>
-		</div>
-	)
+	const items = [
+		{
+			id: 'lkasdsa',
+			label: 'Can I use React on a project?',
+			content: 'You can use React at any projects, you want'
+		},
+		{
+			id: 'lkasdsadas',
+			label: 'Can I use JavaScript on a project?',
+			content: 'You can use JavaScript at any projects, you want'
+		},
+		{
+			id: 'lkasdsadasdasd',
+			label: 'Can I use CSS on a project?',
+			content: 'You can use CSS at any projects, you want'
+		}
+	];
+
+	return <Accordion items={items} />;
 }
 
 export default App
